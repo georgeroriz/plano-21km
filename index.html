@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Plano 21 km – 01/03/2026</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#111827" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="topline">
+        <h1>Plano 21 km</h1>
+        <div class="pill" id="racePill">Prova: 01/03/2026</div>
+      </div>
+      <p class="subtitle">Guia diário + registro. Tudo fica salvo no seu celular (neste navegador).</p>
+
+      <div class="actions">
+        <button class="btn" id="btnToday">Hoje</button>
+        <button class="btn" id="btnWeek">Semana</button>
+        <button class="btn" id="btnAll">Tudo</button>
+        <div class="spacer"></div>
+        <button class="btn btn-ghost" id="btnExport">Exportar</button>
+        <label class="btn btn-ghost file">
+          Importar
+          <input id="fileImport" type="file" accept="application/json" />
+        </label>
+      </div>
+
+      <div class="searchRow">
+        <input id="search" class="search" type="search" placeholder="Buscar por 'longão', 'intervalado', 'Z2'..." />
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="todaySection" class="section"></section>
+
+    <section class="section">
+      <div class="sectionHeader">
+        <h2 id="listTitle">Semana</h2>
+        <div class="hint" id="listHint"></div>
+      </div>
+      <div id="list" class="list"></div>
+    </section>
+
+    <section class="section smallprint">
+      <details>
+        <summary>Como editar e manter histórico</summary>
+        <div class="card">
+          <p><strong>Registros (feito/notas/valores reais)</strong> ficam salvos automaticamente no seu navegador (localStorage). Isso funciona offline.</p>
+          <p>Para usar em outro celular ou garantir backup, clique em <strong>Exportar</strong> e salve o arquivo. Depois, em outro dispositivo, use <strong>Importar</strong>.<br><br>Opcional: você pode salvar o export como <strong>progress.json</strong> no mesmo repositório. Assim, qualquer dispositivo carrega seu progresso automaticamente (o app lê progress.json ao abrir).</p>
+          <p>Para alterar o <strong>plano planejado</strong> (plan.json), edite o arquivo no seu GitHub e o site atualizará na próxima abertura.</p>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Versão: <span id="version"></span> • Dados: plan.json • Persistência: localStorage</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./sw.js").catch(() => {});
+    }
+  </script>
+</body>
+</html>
