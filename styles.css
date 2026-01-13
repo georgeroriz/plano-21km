@@ -1,71 +1,296 @@
+/* ===========================
+   styles.css (substituir tudo)
+   Objetivos:
+   - Header compacto (menos altura)
+   - Filtros em faixa rolável
+   - Tipografia maior e mais legível
+   - Menos "div dentro de div": desarma cards internos
+   - Destaque forte para o treino do dia
+   =========================== */
+
+/* -------- Base / Tipografia -------- */
 :root{
-  --bg:#0b1220;
-  --card:#111827;
-  --muted:#9ca3af;
-  --text:#e5e7eb;
-  --accent:#22c55e;
-  --warn:#f59e0b;
-  --bad:#ef4444;
-  --line:#1f2937;
-  --chip:#0f172a;
+  --bg: #070a12;
+  --surface: rgba(255,255,255,.04);
+  --surface2: rgba(255,255,255,.06);
+  --border: rgba(255,255,255,.10);
+  --text: rgba(255,255,255,.92);
+  --muted: rgba(255,255,255,.68);
+  --muted2: rgba(255,255,255,.52);
+  --accent: #42d392; /* verde */
+  --danger: #ff5d5d;
+  --radius: 18px;
+  --radius2: 14px;
+  --shadow: 0 12px 30px rgba(0,0,0,.35);
 }
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
-.container{max-width:960px;margin:0 auto;padding:16px}
-.header{position:sticky;top:0;background:linear-gradient(180deg, rgba(11,18,32,0.98), rgba(11,18,32,0.82));backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
-.topline{display:flex;align-items:center;justify-content:space-between;gap:12px}
-h1{font-size:20px;margin:0}
-.subtitle{margin:6px 0 0;color:var(--muted);font-size:13px}
-.pill{font-size:12px;color:var(--text);background:rgba(34,197,94,0.12);border:1px solid rgba(34,197,94,0.35);padding:6px 10px;border-radius:999px;white-space:nowrap}
-.actions{display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap}
-.btn{border:1px solid var(--line);background:var(--card);color:var(--text);padding:10px 12px;border-radius:12px;font-weight:600;font-size:13px}
-.btn:active{transform:translateY(1px)}
-.btn-ghost{background:transparent}
-.file{position:relative;overflow:hidden}
-.file input{position:absolute;inset:0;opacity:0}
-.spacer{flex:1}
-.searchRow{margin-top:12px}
-.search{width:100%;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:#0f172a;color:var(--text);outline:none}
-.section{margin-top:18px}
-.sectionHeader{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:10px}
-h2{font-size:16px;margin:0}
-.hint{font-size:12px;color:var(--muted)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px}
-.card + .card{margin-top:12px}
-.today{border:1px solid rgba(34,197,94,0.45);box-shadow:0 0 0 3px rgba(34,197,94,0.08)}
-.todayTitleRow{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
-.todayTitle{font-size:18px;margin:0 0 6px}
-.metaRow{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 0}
-.chip{font-size:12px;background:var(--chip);border:1px solid var(--line);padding:6px 10px;border-radius:999px;color:var(--text)}
-.chip.good{border-color:rgba(34,197,94,0.35);background:rgba(34,197,94,0.10)}
-.chip.warn{border-color:rgba(245,158,11,0.35);background:rgba(245,158,11,0.10)}
-.chip.bad{border-color:rgba(239,68,68,0.35);background:rgba(239,68,68,0.10)}
-.grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px}
-@media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
-.step{border:1px solid var(--line);border-radius:14px;padding:12px;background:#0f172a}
-.stepName{font-weight:700;margin:0 0 6px}
-.stepDetails{margin:0;color:var(--muted);font-size:12px;line-height:1.4}
-.kv{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-.kv .chip{padding:5px 9px}
-.controls{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
-.toggle{display:flex;align-items:center;gap:10px}
-.toggle input{width:18px;height:18px}
-.form{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
-.form label{display:flex;flex-direction:column;gap:6px;font-size:12px;color:var(--muted)}
-.form input,.form textarea{border:1px solid var(--line);background:#0b1220;color:var(--text);border-radius:12px;padding:10px 12px;font-size:14px;outline:none}
-.form textarea{grid-column:1 / -1;min-height:90px;resize:vertical}
-.small{font-size:12px;color:var(--muted);margin-top:10px}
-.list{display:flex;flex-direction:column;gap:10px}
-.row{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;cursor:pointer}
-.row:hover{border-color:#334155}
-.dot{width:10px;height:10px;border-radius:999px;background:#334155;flex:0 0 auto}
-.dot.done{background:var(--accent)}
-.dot.overdue{background:var(--bad)}
-.rowMain{flex:1;min-width:0}
-.rowTitle{margin:0;font-weight:750;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.rowSub{margin:4px 0 0;color:var(--muted);font-size:12px;display:flex;gap:10px;flex-wrap:wrap}
-.badge{padding:2px 8px;border-radius:999px;border:1px solid var(--line);background:#0f172a}
-.drawer{margin-top:8px}
-.footer{border-top:1px solid var(--line);margin-top:28px;color:var(--muted);font-size:12px}
-.smallprint summary{cursor:pointer;color:var(--text);font-weight:700}
-.smallprint .card{margin-top:10px}
+
+html{
+  font-size: 18px; /* aumenta legibilidade no celular */
+  -webkit-text-size-adjust: 100%;
+}
+
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: radial-gradient(1200px 600px at 20% 0%, rgba(66,211,146,.08), transparent 60%),
+              radial-gradient(900px 600px at 80% 10%, rgba(100,130,255,.08), transparent 55%),
+              var(--bg);
+  color: var(--text);
+}
+
+a{ color: inherit; }
+
+main, .container, .content{
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 12px 14px 28px;
+}
+
+/* -------- Header compacto -------- */
+header, .header, .topbar{
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 10px 14px 10px;
+  background: rgba(7,10,18,.72);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+header h1, .header h1, .topbar h1{
+  margin: 0;
+  font-size: 1.25rem; /* menor que antes */
+  letter-spacing: .2px;
+  line-height: 1.2;
+}
+
+header .subtitle,
+.header .subtitle,
+.topbar .subtitle,
+header p, .header p, .topbar p{
+  margin: 4px 0 0;
+  font-size: .90rem;
+  color: var(--muted);
+}
+
+/* Badge da prova (compacto) */
+.badge, .pill, .chip-badge, .race-badge{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(66,211,146,.10);
+  border: 1px solid rgba(66,211,146,.25);
+  color: rgba(255,255,255,.92);
+  font-size: .85rem;
+  white-space: nowrap;
+}
+
+/* -------- Filtros: faixa rolável -------- */
+.actions, .tabs, nav, .filters, .toolbar, .top-actions{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.actions::-webkit-scrollbar,
+.tabs::-webkit-scrollbar,
+nav::-webkit-scrollbar,
+.filters::-webkit-scrollbar,
+.toolbar::-webkit-scrollbar,
+.top-actions::-webkit-scrollbar{
+  height: 6px;
+}
+.actions::-webkit-scrollbar-thumb,
+.tabs::-webkit-scrollbar-thumb,
+nav::-webkit-scrollbar-thumb,
+.filters::-webkit-scrollbar-thumb,
+.toolbar::-webkit-scrollbar-thumb,
+.top-actions::-webkit-scrollbar-thumb{
+  background: rgba(255,255,255,.14);
+  border-radius: 999px;
+}
+
+/* Botões mais compactos */
+button, .btn, .tab{
+  appearance: none;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.04);
+  color: var(--text);
+  padding: 9px 12px;
+  border-radius: 999px;
+  font-size: .92rem;
+  line-height: 1;
+  min-height: 36px;
+}
+
+button:active, .btn:active, .tab:active{
+  transform: translateY(1px);
+}
+button.primary, .btn.primary, .tab.active, .is-active{
+  border-color: rgba(66,211,146,.35);
+  background: rgba(66,211,146,.12);
+}
+
+/* Campo de busca compacto */
+input[type="search"], input.search, .search input{
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.04);
+  color: var(--text);
+  outline: none;
+  margin-top: 10px;
+  font-size: .95rem;
+}
+input[type="search"]::placeholder{ color: var(--muted2); }
+
+/* -------- Cards (corridas) mais legíveis -------- */
+.card, .panel, .workout, .workout-card, .day-card{
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px 14px;
+  margin: 12px 0;
+}
+
+/* Título da corrida maior */
+.workout-title, .card-title, .title, h2, h3{
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+  line-height: 1.15;
+}
+
+/* Metas (chips) mais legíveis */
+.meta, .workout-meta, .chips, .tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 6px 0 0;
+}
+
+.chip, .tag, .pill2{
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.10);
+  color: rgba(255,255,255,.86);
+  font-size: .86rem;
+}
+
+/* Status */
+.status, .badge-status, .late, .atrasado{
+  display: inline-flex;
+  align-items:center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,93,93,.28);
+  background: rgba(255,93,93,.10);
+  color: rgba(255,255,255,.92);
+  font-size: .85rem;
+}
+
+/* -------- Reduz "div dentro de div" -------- */
+/* Se existir card interno (blocos do treino), desarma o visual de card para virar "seção" */
+.card .card,
+.card .panel,
+.panel .panel,
+.workout-card .card,
+.workout-card .panel,
+.workout-card .block,
+.card .block,
+.panel .block{
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 10px 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Separadores sutis entre blocos */
+.block + .block,
+.section + .section,
+.step + .step{
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+/* Títulos de blocos maiores */
+.block-title, .section-title, .step-title{
+  font-size: 1.05rem;
+  margin: 0 0 8px;
+}
+
+/* Textos auxiliares (mais claros) */
+.small, .hint, .muted, .note{
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+/* -------- Destaque forte para o treino do dia -------- */
+/* Funciona se o seu app já marcar com alguma destas classes/atributos */
+.today, .is-today, [data-today="true"], [aria-current="date"]{
+  border-color: rgba(66,211,146,.40) !important;
+  background: linear-gradient(180deg, rgba(66,211,146,.10), rgba(255,255,255,.03));
+}
+
+.today .workout-title,
+.is-today .workout-title,
+[data-today="true"] .workout-title,
+[aria-current="date"] .workout-title{
+  font-size: 1.28rem;
+}
+
+/* Selo "HOJE" (aparece se o container aceitar pseudo-elemento) */
+.today::before,
+.is-today::before,
+[data-today="true"]::before,
+[aria-current="date"]::before{
+  content: "HOJE";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(66,211,146,.35);
+  background: rgba(66,211,146,.12);
+  color: rgba(255,255,255,.95);
+  font-weight: 700;
+  font-size: .78rem;
+  letter-spacing: .6px;
+  margin-bottom: 10px;
+}
+
+/* -------- Layout geral melhor no mobile -------- */
+@media (max-width: 480px){
+  main, .container, .content{
+    padding: 10px 12px 22px;
+  }
+
+  header, .header, .topbar{
+    padding: 10px 12px 10px;
+  }
+
+  button, .btn, .tab{
+    padding: 8px 10px;
+    min-height: 34px;
+    font-size: .90rem;
+  }
+
+  .card, .panel, .workout, .workout-card, .day-card{
+    padding: 14px 12px;
+  }
+}
