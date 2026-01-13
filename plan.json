@@ -414,309 +414,292 @@
         "Marque como feito se realizou mobilidade/caminhada."
       ]
     },
-    {
-      "date": "2026-01-13",
-      "title": "Corrida fácil Z2",
-      "objective": "Base aeróbia e recuperação ativa.",
-      "location": "Esteira ou rua",
-      "durationMin": 50,
-      "distanceKm": null,
-      "tags": [
-        "Fácil",
-        "Z2"
-      ],
-      "steps": [
-        {
-          "name": "Aquecimento",
-          "durationMin": 10,
-          "distanceKm": null,
-          "zone": "Z2",
-          "rpe": "3–4",
-          "hrRef": "135–148 bpm",
-          "treadmillKmh": "8.4–8.8",
-          "details": "Respiração confortável."
-        },
-        {
-          "name": "Rodagem fácil",
-          "durationMin": 30,
-          "distanceKm": null,
-          "zone": "Z2",
-          "rpe": "4",
-          "hrRef": "135–148 bpm",
-          "treadmillKmh": "8.6–8.9",
-          "details": "Conversa possível. Ajuste -0,2 km/h se FC subir cedo."
-        },
-        {
-          "name": "Desaquecer",
-          "durationMin": 5,
-          "distanceKm": null,
-          "zone": "Z1–Z2",
-          "rpe": "2–3",
-          "hrRef": "<148 bpm",
-          "treadmillKmh": "8.0–8.5",
-          "details": "Soltar."
-        }
-      ],
-      "notes": [],
-      "post": [
-        "Registrar: RPE final e FC média da rodagem."
-      ]
-    },
-    {
-      "date": "2026-01-14",
-      "title": "Descanso / Mobilidade",
-      "objective": "Recuperar, manter mobilidade e preparar o próximo treino.",
-      "location": "Casa",
-      "durationMin": 15,
-      "distanceKm": null,
-      "tags": [
-        "Descanso"
-      ],
-      "steps": [
-        {
-          "name": "Mobilidade (quadril/tornozelo/posterior)",
-          "durationMin": 10,
-          "distanceKm": null,
-          "zone": null,
-          "rpe": null,
-          "hrRef": null,
-          "treadmillKmh": null,
-          "details": "Leve, sem dor. Priorize amplitude e controle."
-        },
-        {
-          "name": "Core e glúteos (opcional)",
-          "durationMin": 10,
-          "distanceKm": null,
-          "zone": null,
-          "rpe": null,
-          "hrRef": null,
-          "treadmillKmh": null,
-          "details": "2–3 exercícios simples: prancha, ponte de glúteo, elevação lateral."
-        }
-      ],
-      "notes": [
-        "Se estiver muito bem, caminhada leve 20–30 min ok.",
-        "Sono e hidratação hoje valem mais que qualquer treino extra."
-      ],
-      "post": [
-        "Marque como feito se realizou mobilidade/caminhada."
-      ]
-    },
-    {
-      "date": "2026-01-15",
-      "title": "Intervalado (7×400 m)",
-      "objective": "Trabalhar velocidade/eficiência mantendo controle cardiovascular.",
-      "location": "Esteira",
-      "durationMin": 60,
-      "distanceKm": null,
-      "tags": [
-        "Intervalado"
-      ],
-      "steps": [
-        {
-          "name": "Aquecimento",
-          "durationMin": 12,
-          "distanceKm": null,
-          "zone": "Z2",
-          "rpe": "3–4",
-          "hrRef": "135–148 bpm",
-          "treadmillKmh": "8.6–8.9",
-          "details": ""
-        },
-        {
-          "name": "Ativação (opcional)",
-          "durationMin": 4,
-          "distanceKm": null,
-          "zone": "técnica",
-          "rpe": "6",
-          "hrRef": "—",
-          "treadmillKmh": "11.0–12.0",
-          "details": "3–4×20s strides, 60–90s leve."
-        },
-        {
-          "name": "Série (7×400 m)",
-          "durationMin": null,
-          "distanceKm": null,
-          "zone": "Z4b",
-          "rpe": "8",
-          "hrRef": "até ~165 bpm",
-          "treadmillKmh": "10.3–10.8",
-          "details": "Recuperação: 400 m a 8.2–8.4 km/h. Manter forma."
-        },
-        {
-          "name": "Desaquecer",
-          "durationMin": 10,
-          "distanceKm": null,
-          "zone": "Z1–Z2",
-          "rpe": "2–3",
-          "hrRef": "<148 bpm",
-          "treadmillKmh": "8.0–8.6",
-          "details": ""
-        }
-      ],
-      "notes": [],
-      "post": [
-        "Anotar: velocidade média dos 400 m e se o último repetiu o primeiro."
-      ]
-    },
-    {
-      "date": "2026-01-16",
-      "title": "Descanso / Mobilidade",
-      "objective": "Recuperar, manter mobilidade e preparar o próximo treino.",
-      "location": "Casa",
-      "durationMin": 15,
-      "distanceKm": null,
-      "tags": [
-        "Descanso"
-      ],
-      "steps": [
-        {
-          "name": "Mobilidade (quadril/tornozelo/posterior)",
-          "durationMin": 10,
-          "distanceKm": null,
-          "zone": null,
-          "rpe": null,
-          "hrRef": null,
-          "treadmillKmh": null,
-          "details": "Leve, sem dor. Priorize amplitude e controle."
-        },
-        {
-          "name": "Core e glúteos (opcional)",
-          "durationMin": 10,
-          "distanceKm": null,
-          "zone": null,
-          "rpe": null,
-          "hrRef": null,
-          "treadmillKmh": null,
-          "details": "2–3 exercícios simples: prancha, ponte de glúteo, elevação lateral."
-        }
-      ],
-      "notes": [
-        "Se estiver muito bem, caminhada leve 20–30 min ok.",
-        "Sono e hidratação hoje valem mais que qualquer treino extra."
-      ],
-      "post": [
-        "Marque como feito se realizou mobilidade/caminhada."
-      ]
-    },
-    {
-      "date": "2026-01-17",
-      "title": "Tempo (2×10 min)",
-      "objective": "Sustentar esforço firme e controlado; construir limiar sem estourar.",
-      "location": "Esteira",
-      "durationMin": 60,
-      "distanceKm": null,
-      "tags": [
-        "Tempo",
-        "Z3"
-      ],
-      "steps": [
-        {
-          "name": "Aquecimento",
-          "durationMin": 12,
-          "distanceKm": null,
-          "zone": "Z2",
-          "rpe": "3–4",
-          "hrRef": "135–148 bpm",
-          "treadmillKmh": "8.6–8.9",
-          "details": ""
-        },
-        {
-          "name": "Bloco 1 (10 min)",
-          "durationMin": 10,
-          "distanceKm": null,
-          "zone": "Z3 alto",
-          "rpe": "6–7",
-          "hrRef": "150–158 bpm",
-          "treadmillKmh": "9.5–9.8",
-          "details": "Firme, controlado."
-        },
-        {
-          "name": "Recuperação",
-          "durationMin": 5,
-          "distanceKm": null,
-          "zone": "Z1–Z2",
-          "rpe": "2–3",
-          "hrRef": "<145 bpm (ideal)",
-          "treadmillKmh": "8.2–8.4",
-          "details": "Mais longa para garantir queda de FC."
-        },
-        {
-          "name": "Bloco 2 (10 min)",
-          "durationMin": 10,
-          "distanceKm": null,
-          "zone": "Z3 alto",
-          "rpe": "6–7",
-          "hrRef": "152–160 bpm",
-          "treadmillKmh": "9.5–9.9",
-          "details": "Tente repetir o bloco 1."
-        },
-        {
-          "name": "Desaquecer",
-          "durationMin": 10,
-          "distanceKm": null,
-          "zone": "Z1–Z2",
-          "rpe": "2–3",
-          "hrRef": "<148 bpm",
-          "treadmillKmh": "8.0–8.6",
-          "details": ""
-        }
-      ],
-      "notes": [],
-      "post": [
-        "Anotar: FC média de cada bloco e se a recuperação fez a FC cair."
-      ]
-    },
-    {
-      "date": "2026-01-18",
-      "title": "Longão Z2 (14 km)",
-      "objective": "Resistência específica para a meia; construir tempo de pé.",
-      "location": "Rua (preferencial) ou esteira",
-      "durationMin": null,
-      "distanceKm": 14,
-      "tags": [
-        "Longão",
-        "Z2"
-      ],
-      "steps": [
-        {
-          "name": "Início leve",
-          "durationMin": 10,
-          "distanceKm": null,
-          "zone": "Z1–Z2",
-          "rpe": "3",
-          "hrRef": "<145 bpm",
-          "treadmillKmh": "8.2–8.6",
-          "details": "Segurar o começo."
-        },
-        {
-          "name": "Parte principal",
-          "durationMin": null,
-          "distanceKm": null,
-          "zone": "Z2",
-          "rpe": "4",
-          "hrRef": "135–148 bpm",
-          "treadmillKmh": "8.4–8.9",
-          "details": "Ritmo conversável. Hidratação se >75 min."
-        },
-        {
-          "name": "Desaquecer",
-          "durationMin": 5,
-          "distanceKm": null,
-          "zone": "Z1–Z2",
-          "rpe": "2–3",
-          "hrRef": "<148 bpm",
-          "treadmillKmh": "7.8–8.4",
-          "details": "Soltar."
-        }
-      ],
-      "notes": [
-        "Se fizer na esteira: dividir mentalmente em blocos de 20 min.",
-        "Nutrição: se passar de 90 min, considerar 1 gel (testar)."
-      ],
-      "post": [
-        "Anotar: sensação do final (pernas) e estabilidade de FC."
-      ]
+  {
+    "date": "2026-01-13",
+    "title": "Corrida fácil Z2 (Explorar a cidade)",
+    "objective": "Base aeróbia e recuperação ativa, aproveitando a viagem com uma rodagem confortável.",
+    "location": "Rua/parque (preferencial) ou esteira (se disponível)",
+    "durationMin": 50,
+    "distanceKm": null,
+    "tags": ["Fácil", "Z2", "Rua"],
+    "steps": [
+      {
+        "name": "Aquecimento",
+        "durationMin": 10,
+        "distanceKm": null,
+        "zone": "Z2",
+        "rpe": "3–4",
+        "hrRef": "135–148 bpm",
+        "treadmillKmh": "8.4–8.8",
+        "details": "Respiração confortável. Na rua: comece mais leve nos 3–4 primeiros minutos e ajuste por esforço (subidas elevam FC). Ritmo de referência no plano/flat: ~6:50–7:10 min/km."
+      },
+      {
+        "name": "Rodagem fácil (turismo)",
+        "durationMin": 35,
+        "distanceKm": null,
+        "zone": "Z2",
+        "rpe": "4",
+        "hrRef": "135–148 bpm",
+        "treadmillKmh": "8.6–8.9",
+        "details": "Conversa possível. Escolha um percurso agradável (parque, orla, centro). Se a FC subir cedo, reduza o esforço (ou -0,2 km/h na esteira). Ritmo de referência no plano/flat: ~6:45–7:00 min/km."
+      },
+      {
+        "name": "Desaquecer",
+        "durationMin": 5,
+        "distanceKm": null,
+        "zone": "Z1–Z2",
+        "rpe": "2–3",
+        "hrRef": "<148 bpm",
+        "treadmillKmh": "8.0–8.5",
+        "details": "Soltar bem. Finalize caminhando 1–2 min se necessário para baixar FC."
+      }
+    ],
+    "notes": [
+      "Dica viagem: transforme em 'city run' — passe por 2–3 pontos legais e termine perto de um café/mercado para hidratar e comer algo.",
+      "Se o percurso tiver muitas subidas: priorize RPE 3–4 e aceite ritmo mais lento sem “brigar” com a FC."
+    ],
+    "post": ["Registrar: RPE final e FC média da rodagem."]
+  },
+  {
+    "date": "2026-01-14",
+    "title": "Descanso / Mobilidade (viagem)",
+    "objective": "Recuperar, manter mobilidade e preparar o próximo treino, sem depender de estrutura.",
+    "location": "Hotel/casa",
+    "durationMin": 15,
+    "distanceKm": null,
+    "tags": ["Descanso"],
+    "steps": [
+      {
+        "name": "Mobilidade (quadril/tornozelo/posterior)",
+        "durationMin": 10,
+        "distanceKm": null,
+        "zone": null,
+        "rpe": null,
+        "hrRef": null,
+        "treadmillKmh": null,
+        "details": "Leve, sem dor. Priorize amplitude e controle."
+      },
+      {
+        "name": "Core e glúteos (opcional)",
+        "durationMin": 5,
+        "distanceKm": null,
+        "zone": null,
+        "rpe": null,
+        "hrRef": null,
+        "treadmillKmh": null,
+        "details": "1–2 exercícios simples: prancha (2x30–45s) e ponte de glúteo (2x10–12)."
+      }
+    ],
+    "notes": [
+      "Se estiver muito bem: caminhada leve 20–40 min para explorar a cidade (conta muito na recuperação).",
+      "Sono e hidratação hoje valem mais que qualquer treino extra."
+    ],
+    "post": ["Marque como feito se realizou mobilidade/caminhada."]
+  },
+  {
+    "date": "2026-01-15",
+    "title": "Intervalado (7×400 m) — versão rua/parque",
+    "objective": "Trabalhar velocidade/eficiência mantendo controle cardiovascular, adaptado para parque/rua.",
+    "location": "Parque/rua plana (preferencial) ou esteira (se disponível)",
+    "durationMin": 60,
+    "distanceKm": null,
+    "tags": ["Intervalado", "Rua"],
+    "steps": [
+      {
+        "name": "Aquecimento",
+        "durationMin": 12,
+        "distanceKm": null,
+        "zone": "Z2",
+        "rpe": "3–4",
+        "hrRef": "135–148 bpm",
+        "treadmillKmh": "8.6–8.9",
+        "details": "Na rua: inclua 2–3 acelerações progressivas de 10–12s (bem leves) dentro do aquecimento, só para “acordar” a passada."
+      },
+      {
+        "name": "Ativação (opcional)",
+        "durationMin": 4,
+        "distanceKm": null,
+        "zone": "técnica",
+        "rpe": "6",
+        "hrRef": "—",
+        "treadmillKmh": "11.0–12.0",
+        "details": "3–4×20s strides, 60–90s leve. Na rua: faça em trecho reto e seguro."
+      },
+      {
+        "name": "Série (7×400 m) — escolha A ou B",
+        "durationMin": null,
+        "distanceKm": null,
+        "zone": "Z4b",
+        "rpe": "8",
+        "hrRef": "até ~165 bpm",
+        "treadmillKmh": "10.3–10.8",
+        "details": "A) Se tiver pista/trecho medido: 7×400 m forte com 400 m leve (trote) entre reps. B) Se NÃO tiver medida: 7×2:15 forte / 2:15 leve (equivalente aproximado). Referência no plano/flat para o forte: ~5:35–5:55 min/km (não persiga pace em subida/vento; use RPE e forma)."
+      },
+      {
+        "name": "Desaquecer",
+        "durationMin": 10,
+        "distanceKm": null,
+        "zone": "Z1–Z2",
+        "rpe": "2–3",
+        "hrRef": "<148 bpm",
+        "treadmillKmh": "8.0–8.6",
+        "details": "Soltar bem. Se estiver muito quente: acrescente 2–3 min caminhando ao final."
+      }
+    ],
+    "notes": [
+      "Para aproveitar a viagem: faça o aquecimento indo até um parque/trecho bonito, execute a série em um loop plano e volte desaqueçendo por outro caminho.",
+      "Se o local for muito irregular ou cheio: troque por 10×1 min forte / 1 min leve (mais fácil de executar com segurança)."
+    ],
+    "post": ["Anotar: consistência (o último repetiu o primeiro?) e como a FC respondeu nas recuperações."]
+  },
+  {
+    "date": "2026-01-16",
+    "title": "Descanso / Mobilidade (viagem)",
+    "objective": "Recuperar e manter mobilidade, especialmente após deslocamentos (carro/avião).",
+    "location": "Hotel/casa",
+    "durationMin": 15,
+    "distanceKm": null,
+    "tags": ["Descanso"],
+    "steps": [
+      {
+        "name": "Mobilidade (quadril/tornozelo/posterior)",
+        "durationMin": 10,
+        "distanceKm": null,
+        "zone": null,
+        "rpe": null,
+        "hrRef": null,
+        "treadmillKmh": null,
+        "details": "Leve, sem dor. Foque em quadril e panturrilha (muito impacto da rua)."
+      },
+      {
+        "name": "Core e glúteos (opcional)",
+        "durationMin": 5,
+        "distanceKm": null,
+        "zone": null,
+        "rpe": null,
+        "hrRef": null,
+        "treadmillKmh": null,
+        "details": "Ponte de glúteo 2x10–12 + prancha lateral 2x20–30s por lado."
+      }
+    ],
+    "notes": [
+      "Se quiser aproveitar a cidade sem ‘treinar’: caminhada longa (30–60 min) é excelente e não atrapalha o tempo de sábado.",
+      "Se estiver com panturrilha/sola do pé sensível (mudança de piso): priorize mobilidade e descanso."
+    ],
+    "post": ["Marque como feito se realizou mobilidade/caminhada."]
+  },
+  {
+    "date": "2026-01-17",
+    "title": "Tempo (2×10 min) — versão rua/parque",
+    "objective": "Sustentar esforço firme e controlado; construir limiar sem estourar, preferindo percurso plano.",
+    "location": "Rua/parque plano (preferencial) ou esteira (se disponível)",
+    "durationMin": 60,
+    "distanceKm": null,
+    "tags": ["Tempo", "Z3", "Rua"],
+    "steps": [
+      {
+        "name": "Aquecimento",
+        "durationMin": 12,
+        "distanceKm": null,
+        "zone": "Z2",
+        "rpe": "3–4",
+        "hrRef": "135–148 bpm",
+        "treadmillKmh": "8.6–8.9",
+        "details": "Na rua: busque um trecho plano para iniciar o bloco 1 já estabilizado."
+      },
+      {
+        "name": "Bloco 1 (10 min)",
+        "durationMin": 10,
+        "distanceKm": null,
+        "zone": "Z3 alto",
+        "rpe": "6–7",
+        "hrRef": "150–158 bpm",
+        "treadmillKmh": "9.5–9.8",
+        "details": "Firme, controlado. Referência no plano/flat: ~6:05–6:20 min/km. Se houver vento/subida, mantenha RPE e forma."
+      },
+      {
+        "name": "Recuperação",
+        "durationMin": 5,
+        "distanceKm": null,
+        "zone": "Z1–Z2",
+        "rpe": "2–3",
+        "hrRef": "<145 bpm (ideal)",
+        "treadmillKmh": "8.2–8.4",
+        "details": "Mais longa para garantir queda de FC. Na rua: pode ser trote + 30–60s caminhada se necessário."
+      },
+      {
+        "name": "Bloco 2 (10 min)",
+        "durationMin": 10,
+        "distanceKm": null,
+        "zone": "Z3 alto",
+        "rpe": "6–7",
+        "hrRef": "152–160 bpm",
+        "treadmillKmh": "9.5–9.9",
+        "details": "Tente repetir o bloco 1. Se subir demais, mantenha o esforço e não force o pace."
+      },
+      {
+        "name": "Desaquecer",
+        "durationMin": 10,
+        "distanceKm": null,
+        "zone": "Z1–Z2",
+        "rpe": "2–3",
+        "hrRef": "<148 bpm",
+        "treadmillKmh": "8.0–8.6",
+        "details": "Soltar."
+      }
+    ],
+    "notes": [
+      "Para aproveitar a cidade: faça o tempo em um loop plano (parque) e use o aquecimento/desaquece para “turistar” pelo bairro.",
+      "Se estiver muito quente: reduza o alvo e priorize HR/RPE (o bloco ainda cumpre o papel)."
+    ],
+    "post": ["Anotar: FC média de cada bloco e se a recuperação fez a FC cair."]
+  },
+  {
+    "date": "2026-01-18",
+    "title": "Longão Z2 (14 km) — versão turismo",
+    "objective": "Resistência específica para a meia; construir tempo de pé, preferindo rua/parque.",
+    "location": "Rua (preferencial) ou esteira (se disponível)",
+    "durationMin": null,
+    "distanceKm": 14,
+    "tags": ["Longão", "Z2", "Rua"],
+    "steps": [
+      {
+        "name": "Início leve",
+        "durationMin": 10,
+        "distanceKm": null,
+        "zone": "Z1–Z2",
+        "rpe": "3",
+        "hrRef": "<145 bpm",
+        "treadmillKmh": "8.2–8.6",
+        "details": "Segurar o começo. Na rua: primeiro km bem “econômico” para evitar drift de FC."
+      },
+      {
+        "name": "Parte principal",
+        "durationMin": null,
+        "distanceKm": null,
+        "zone": "Z2",
+        "rpe": "4",
+        "hrRef": "135–148 bpm",
+        "treadmillKmh": "8.4–8.9",
+        "details": "Ritmo conversável. Se for um longão turístico, escolha um percurso com poucos cruzamentos. Hidratação se >75 min."
+      },
+      {
+        "name": "Desaquecer",
+        "durationMin": 5,
+        "distanceKm": null,
+        "zone": "Z1–Z2",
+        "rpe": "2–3",
+        "hrRef": "<148 bpm",
+        "treadmillKmh": "7.8–8.4",
+        "details": "Soltar."
+      }
+    ],
+    "notes": [
+      "Dica viagem: transforme em um percurso ‘ida e volta’ para um ponto bonito (mirante/parque) — ajuda a manter foco e ritmo.",
+      "Nutrição: se passar de 90 min, considerar 1 gel (testar).",
+      "Se fizer na esteira: dividir mentalmente em blocos de 20 min."
+    ],
+    "post": ["Anotar: sensação do final (pernas) e estabilidade de FC."]
     },
     {
       "date": "2026-01-19",
